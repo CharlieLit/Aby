@@ -8,7 +8,7 @@ let pesan = args.join` `
 let oi = `*Charlie Funade* ${pesan}`
 let teks = `〔 *${wm}* 〕\n *𝘼𝙉𝙊𝙏𝘼𝙏𝙀‼️𝙣𝙤 𝙦𝙪𝙚𝙧𝙚𝙢𝙤𝙨 plantas🌱* \n\n ${oi}\n\n *🤍 ❏𝙀𝙩𝙞𝙦𝙪𝙚𝙩𝙖𝙨:*\n`
 for (let mem of participants) {
-teks += `✨ এ⁩ ➢ @${mem.id.split('@')[0]}\n`}
+teks += `✨এ⁩➢ @${mem.id.split('@')[0]}\n`}
 teks += `└ ❏ @abyy_u.ff \n\n*<3*`
 conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
 conn.sendFile(m.chat, vn, 'Invocar.mp3', null, m, true, { type: 'audioMessage', ptt: true, sendEphemeral: true })
